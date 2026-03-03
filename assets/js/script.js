@@ -3,7 +3,7 @@
 // Always use dynamic server generation. Since this is a static GitHub Pages example,
 // we are using sandbox credentials intended for testing ONLY.
 
-// Sandbox Credentials (replace with your own if needed)
+// Production Credentials (provided by user)
 const PAYU_MERCHANT_KEY = '2tDOZI';
 const PAYU_SALT = '3SyyMLG8xgypOWXYyjb3GpWbH3hxMq33';
 

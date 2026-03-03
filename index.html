@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +13,7 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgo=">
 </head>
+
 <body>
     <div class="background-shapes">
         <div class="shape shape-1"></div>
@@ -22,7 +24,11 @@
     <div class="payment-container">
         <header class="payment-header">
             <div class="icon-container">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
             </div>
             <h2>Secure Checkout</h2>
             <p>Please fill your details to proceed with the payment.</p>
@@ -40,7 +46,8 @@
                 <label for="mobileNumber">Mobile Number</label>
                 <div class="input-with-prefix">
                     <span class="prefix">+91</span>
-                    <input type="tel" id="mobileNumber" placeholder="9876543210" pattern="[0-9]{10}" maxlength="10" required>
+                    <input type="tel" id="mobileNumber" placeholder="9876543210" pattern="[0-9]{10}" maxlength="10"
+                        required>
                 </div>
                 <span class="error-message" id="mobileError">Please enter a valid 10-digit mobile number.</span>
             </div>
@@ -67,7 +74,7 @@
         </form>
 
         <!-- Hidden Form for PayU Submission -->
-        <form action="https://test.payu.in/_payment" method="post" id="payuForm" style="display: none;">
+        <form action="https://secure.payu.in/_payment" method="post" id="payuForm" style="display: none;">
             <input type="hidden" name="key" id="payu_key" value="" />
             <input type="hidden" name="txnid" id="payu_txnid" value="" />
             <input type="hidden" name="amount" id="payu_amount" value="" />
@@ -91,4 +98,5 @@
     -->
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>
